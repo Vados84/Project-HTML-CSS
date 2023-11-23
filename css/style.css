@@ -1,0 +1,129 @@
+/* Reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: currentColor;
+	text-decoration: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* -------------------------------------------- */
+
+/* ------------ Base */
+
+body {
+	font-family: 'Manrope', sans-serif;
+	color: #fcf9f9;
+	background-color: #2e2e2e;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+/* -------------------------------------------------- */
+
+/* --------- Section Testimonials ------------------- */
+
+.testimonials {
+	padding: 150px 0;
+}
+
+.testimonials-title {
+	font-size: 44px;
+	font-weight: 500;
+	line-height: 1.45;
+	letter-spacing: -0.03em;
+
+	margin-bottom: 64px;
+}
+
+.card {
+}
+
+.testimonials-title-card {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.5;
+	margin-bottom: 8px;
+
+	text-align: center;
+}
+
+.testimonials-text-card {
+	font-size: 16px;
+	font-weight: 400;
+
+	text-align: center;
+	color: rgba(252, 249, 249, 0.4);
+}
+
+@media only screen and (min-width: 1280px) {
+	.container {
+		max-width: 1040px;
+	}
+
+	.card {
+		display: flex;
+		gap: 26px;
+	}
+
+	.card-list {
+		position: relative;
+		padding: 54px 18px 18px;
+		border-radius: 4px;
+		border: 1px solid rgba(252, 249, 249, 0.1);
+	}
+
+	.img-card {
+		position: absolute;
+		top: -30px;
+		left: 50%;
+		transform: translate(-50%);
+
+		border-radius: 50%;
+	}
+}
